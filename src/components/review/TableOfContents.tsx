@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ChevronDown, ListOrdered } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-export type TocItem = { id: string; label: string; score?: number };
+export type TocItem = { id: string; label: string; score?: number | undefined };
 
 function useActive(ids: string[]) {
   const [active, setActive] = useState(ids[0]);
