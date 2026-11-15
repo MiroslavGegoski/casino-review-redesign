@@ -15,6 +15,7 @@ export function ReviewHero({ review }: { review: Review }) {
         className="absolute inset-0 h-full w-full object-cover object-right"
       />
       <div className="bg-hero-fade absolute inset-0" />
+      <div className="absolute inset-0 bg-ink/75 lg:hidden" />
       <div className="relative mx-auto max-w-7xl px-5 pb-14 pt-6 lg:pb-20">
         <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs font-medium text-ink-muted">
           <a href="#" className="hover:text-ink-foreground">Home</a>
