@@ -23,7 +23,7 @@ function useActive(ids: string[]) {
   return active;
 }
 
-function List({ items, active, onPick }: { items: TocItem[]; active?: string; onPick?: () => void }) {
+function List({ items, active, onPick }: { items: TocItem[]; active?: string | undefined; onPick?: () => void }) {
   return (
     <ol className="space-y-0.5">
       {items.map((item, i) => (
