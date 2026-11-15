@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+
+- Review page content (text, ratings, details, related links) lives in `src/data/<casino>.ts`; components in `src/components/review/` stay content-free so each maps cleanly to a reusable WordPress block.
+- Every top-level page block carries a `data-wp-block="<Block name>"` attribute so the "Show WordPress blocks" toggle can outline it for the WordPress rebuild.
